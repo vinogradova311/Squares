@@ -7,15 +7,15 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class SqrServiceTest {
-        @ParameterizedTest
-        @CsvSource({
-                "3,200,300",
-                "63,1000,9000",
-                "39,805,4567",
-                "90,1,10000",
-                "8,555,999"
+    @ParameterizedTest
+    @CsvSource({
+            "3,200,300",
+            "63,1000,9000",
+            "39,805,4567",
+            "90,1,10000",
+            "8,555,999"
 
-        })
+    })
     public void calcNumberOfSquares(int expected, int limitMin, int limitMax) {
 
         SqrService service = new SqrService();
